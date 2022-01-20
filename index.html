@@ -1,88 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Madieja - Madiantara Teja</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Madiantara Teja</title>
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" href="assets/css/bsgrid.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/index.css">
 
-	<style>
-        @font-face {
-            font-family:'moderne';
-            src: url(MODERNE.TTF);
-        }
-
-	* {margin: 0; padding: 0;}
-	h1 {
-		position: absolute;
-		font-family: 'moderne', sans-serif;		
-		letter-spacing: px;
-		font-size: 10vh;
-		color: #2f2f2f;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%,-50%);
-		transform: translate(-50%,-50%);
-		z-index: 3;
-	}
-	@media (max-width: 768px) {
-		h1 {
-			font-size: 5vh;
-		}
-	}
-
-	#landing {
-		/*position: relative;
-		background-color: black;
-		text-align: center;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;*/
-
-		text-align:center;
-		overflow: hidden;
-	}
-
-	#myVideo{
-/*		min-width: 100%;
-		min-height: 100%;
-		width: 100%;
-		height: 100%;
-		background-size: 100% 100%;
- 		background-color: black; 
-  		background-image: ;
-  		background-position: center center;
-  		background-size: contain;
-   		object-fit: cover; 
-   		z-index: -999;*/
-
-   		position: absolute;
-		right: 0;
-		bottom: 0;
-		top:0;
-		right:0;
-		width: 100%;
-		height: 100%;
-		background-size: 100% 100%;
- 		background-color: black; /* in case the video doesn't fit the whole page*/
-  		background-position: center center;
-  		background-size: contain;
-   		-o-object-fit: cover;
-   		object-fit: cover; /*cover video background */
-   		z-index:3;
-   	}
-	</style>
-
+    <!-- Vendor Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 
+
 <body>
-	<section id="landing">
-		<video loop muted autoplay id="myVideo">
-			<source src="img/video.MP4" type="video/mp4">
-			<source src="img/video.webm" type="video/webm">
-		</video>
-		<div>
-			<h1>COMING SOON</h1>
-		</div>	
-	</section>
+    <header class="elv-5">
+        <section class="header-main">
+            <div class="content-container">
+                <div class="sitelogo">
+                    <a href="#">
+                        <img src="assets/img/logo.png" alt="Madiantara Teja">
+                    </a>
+                </div>
+                <div class="drawer-trigger trans">
+                    <i data-feather="briefcase" class="feather-header"></i>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="home">
+        <section id="hero">
+            <div class="content-container">
+                <div class="main-heading">
+                    <div class="avatar overflow-hidden">
+                        <img src="assets/img/ava.jpg" alt="madieja" class="">
+                    </div>
+                    <p class="name">Muhamad Teja Madiantara</p>
+                    <h1>Visual Designer & Front-End Developer</h1>
+                    <button class="button button-primary trans">
+                        Download Resume
+                        <i data-feather="download" class="feather-button ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="">
+            <div class="decorator"></div>
+            <div class="content-container d-flex flex-wrap">
+                <div class="inner-wrapper col-12 col-md-6">
+                        <h1 class="about-title mb-5 elv-1">Let me tell you about myself.</h1>
+                        <div class="about-paragraph">Creative professional in love with tech and
+                            art. Always like to taking any challenges,
+                            open to new experiences and taught
+                            myself about new things.
+                            Have good knowledge around Creative
+                            Industry and information technology</div>
+                </div>
+            </div>
+            <div class="mascot elv-0">
+                <img src="assets/img/decorator/1.png" alt="madieja" class="image-fluid">
+            </div>
+        </section>
+        <section id="work">
+            <div class="spacer50"></div>
+            <div class="content-container">
+                <h2 class="work-title">In a world full of problems, be the solution.</h2>
+                <button class="button trans">
+                    <i data-feather="award" class="feather-button mr-2"></i>
+                    My Works
+                </button>
+            </div>
+            <div class="mascot">
+                <img src="assets/img/decorator/2.png" alt="madieja" class="image-fluid">
+            </div>
+        </section>
+        <section id="expertise">
+            <div class="content-container">
+                <h2 class="expertise-title">
+                    Area of<br>Expertise
+                </h2>
+                <ul class="expertise-items d-flex flex-wrap">
+                    <li class="col-6 col-md-4"><div class="item">Layouting</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Compositing</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Tracing</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Illustrating</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Editing</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Prototyping</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Coding</div></li>
+                    <li class="col-6 col-md-4"><div class="item">Googling</div></li>
+                </ul>
+            </div>
+            <div class="mascot">
+                <img src="assets/img/decorator/3.png" alt="madieja" class="image-fluid">
+            </div>
+        </section>
+        <section id="tools">
+            <div class="content-container">
+                <h3 class="tools-title">Tools & Technologies that i usually use</h3>
+                <div class="tools-slider">
+                    <div class="slider-track">
+                        <div class="slide"><img src="assets/img/tools/tools_1.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_2.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_3.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_4.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_5.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_6.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_7.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_8.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_9.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_10.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_11.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_12.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_13.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_14.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_1.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_2.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_3.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_4.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_5.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_6.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_7.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_8.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_9.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_10.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_11.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_12.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_13.jpg" alt="madieja tool" /></div>
+                        <div class="slide"><img src="assets/img/tools/tools_14.jpg" alt="madieja tool" /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content-container">
+            <div class="footer-logo mb-3 mb-md-1">
+                <a href="#"><img src="assets/img/logo.png" alt="madieja" class="image-fluid"></a>
+            </div>
+            <div class="copyright mb-5">© <script>document.write(new Date().getFullYear());</script> by <span class="bold">Madieja</span></div>
+            <div class="email">
+                <i data-feather="mail" class="feather-button mr-2" class="feather"></i>
+                <span>madiantara.teja@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+    <div class="site-drawer">
+        <div class="exit"></div>
+        <div class="content-container"></div>
+    </div>  
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

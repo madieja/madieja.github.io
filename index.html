@@ -13,6 +13,7 @@
 
     <!-- Vendor Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
 
 
@@ -68,7 +69,7 @@
             <div class="spacer50"></div>
             <div class="content-container">
                 <h2 class="work-title">In a world full of problems, be the solution.</h2>
-                <button class="button trans">
+                <button class="button trans drawer-trigger">
                     <i data-feather="award" class="feather-button mr-2"></i>
                     My Works
                 </button>
@@ -147,9 +148,25 @@
             </div>
         </div>
     </footer>
-    <div class="site-drawer">
-        <div class="exit"></div>
-        <div class="content-container"></div>
+    <div class="site-drawer elv-10">
+        <div class="content-container d-flex flex-column align-items-center">   
+            <a href="https://behance.net/madieja" target="_blank" class="drawer-content">
+                <i data-feather="image" class="mr-3" width="24" height="24"></i>
+                Graphic Design Portfolio
+            </a>
+            <a href="https://dribbble.com/madieja/shots" target="_blank" class="drawer-content">
+                <i data-feather="monitor" class="mr-3" width="24" height="24"></i>
+                UI Design Portfolio
+            </a>
+            <a href="#" class="drawer-content">
+                <i data-feather="code" class="mr-3" width="24" height="24"></i>
+                <span>Front-End Portfolio</span>
+            </a>
+            <div class="exit d-inline-flex align-items-center justify-content-center">
+                <i data-feather="arrow-left" width="24" height="24" class="mr-1"></i>
+                <span class="bold">Back</span>
+            </div>         
+        </div>
     </div>  
     <script src="assets/js/index.js"></script>
 </body>

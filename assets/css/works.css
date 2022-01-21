@@ -1,0 +1,75 @@
+body {
+    background-color: #eee
+}
+
+#work header {
+    position: relative;
+    padding: 100px 0;
+}
+
+#work .sitelogo {
+    width: 52px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+#work .page-title {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 8px 8px 10px 0 rgb(0 0 0 / 7%);
+}
+
+.card-content .title {
+    color: inherit;
+}
+
+
+.badge span {
+    background-color: #222222;
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px
+}
+
+.progress div {
+    background-color: red
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
+}
+
+@media (max-width: 991px) {
+    .work-item .button {
+        padding: 20px 24px;
+    }
+    #work header {
+        padding: 75px 0;
+    }
+    
+    #work .page-title {
+        text-align: center;
+        font-size: 32px;
+    }
+
+
+}
